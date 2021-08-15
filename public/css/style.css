@@ -3,4 +3,38 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins';
+  color: #fff;
 }
+
+.nav-active{
+  color: #00ff62 !important;
+}
+
+.nav-link:hover{
+  color: #00ff62 !important;
+}
+
+body, .bg-navbar-dark{
+  background-color: #040B14;
+}
+
+.btn-signin, .btn-signup{
+  width: 6rem;
+  font-size: 0.8rem;
+}
+
+.btn-signup{
+  background-color: #0aeb60;
+  opacity: 0.9;
+}
+
+.btn-signup:hover{
+  opacity: 1;
+  transition: 0.1s;
+}
+
+.post-title{
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+

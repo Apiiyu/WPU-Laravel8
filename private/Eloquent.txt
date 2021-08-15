@@ -1,0 +1,23 @@
+<-- Materi Eloquent -->
+
+Eloquent adalah ORM (Object Relational Mapping) yang membuat user bisa dengan mudah berinteraksi dengan database
+Ketika menggunakan Eloquent maka database akan bercorresponding menggunakan Model untuk berinteraksi dengan table.
+
+<-- Fungsi Eloquent -->
+Fungsi Eloquent adalah kita bisa membuat data pada table kita tanpa menyentuh DBMS kita lagi
+Jadi kita membuat sebuah data bisa menggunakan Eloquent
+
+<-- Cara menggunakan Eloquent -->
+1. Ketikan php artisan tinker pada terminal vscode kita
+2. Lalu kita buat sebuah variable yang berisikan Model yang merepresentasikan table 
+   contohnya $user = new User (atau bisa gunakan namespace model kita)
+   contohnya $user = App\Models\User
+3. Lalu tinggal kita buat sebuah data yang akan dimasukan ke dalam database
+  $user->(field_database) = (value)
+  Contohnya $user->name = 'rafzy'
+  $user->email = 'rafzy@gmail.com'
+
+  Jika sudah mengisikan data pada setiap fieldnya langkah terakhir tinggal kita masukkan data tersebut
+  dengan menggunakan syntax $user->save()
+ 
+  Maka data tersebut otomatis akan ditambahkan pada database kita

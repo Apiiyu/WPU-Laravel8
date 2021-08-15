@@ -2,9 +2,9 @@
 
 @section('content')
   <article>
-    <h2>{{ $post['title'] }}</h2>
-    <h6>{{ $post['authors'] }}</h6>
-    <p>{{ $post['body'] }}</p>
+    <h2 class='post-title'>{{ $post['title'] }}</h2>
+    <h6 class='post-authors'>{{ $post['authors'] }}</h6>
+    <p class='post-body'>{{ $post['body'] }}</p>
   </article>
 
   <a href="/posts" class="btn btn-primary">Back to Blog</a>

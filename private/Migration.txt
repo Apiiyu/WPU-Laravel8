@@ -1,0 +1,21 @@
+<-- Materi Migration -->
+
+Migration ialah seperti version control untuk database seperti halnya github, gitlab dsb
+Yang mana hal tersebut bisa melacak perubahan yang terjadi pada database kita.
+
+<-- Fungsi Migration -->
+Membuat table melalui source code php kita dengan bantuan framework laravel.
+Jadi kita tidak perlu menyentuh DBMS kita untuk membuat table pada database.
+
+<-- Cara Membuat migration -->
+Cara membuat migration ialah tinggal kita ketikkan syntax php artisan make:migration(nama file migration)
+
+<-- Cara Menjalankannya -->
+1. Cara menjalankannya ialah tinggal kita ketikkan php artisan migrate pada terminal vscode kita
+Syntax tersebut akan menjalankan semua code yang ada pada method up didalam file migration kita
+
+2. php artisan migrate:rollback
+Syntax tersebut akan menjalankan semua code yang ada pada method down didalam file migration kita
+
+3. php artisan migrate:fresh
+Syntax tersebut akan menjalankan semua code yang ada pada method up & down didalam file migration kita
