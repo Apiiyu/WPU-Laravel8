@@ -32,4 +32,6 @@ Route::get('/about', function () {
 Route::get('/posts', [PostController::class, 'index']);
 
 // <-- Single Posts -->
-Route::get('/posts/{slug}', [PostController::class, 'show']);
+# <-- post:slug mengartikan sebagai mencari data dari table post menggunakan klausa where -->
+# <-- Jadi Logikanya System mencari data dari model post yang merepresentasikan table post yang mana field slug == slug -->
+Route::get('/posts/{post:slug}', [PostController::class, 'show']); # 
